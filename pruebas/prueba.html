@@ -21,20 +21,61 @@
     <br>
     <br>
     
-    <form action="/formulario" method="GET">
+    <form action="/formulario" method="post">
         <label for="Nombre">Nombre</label>
-        <input value="Nombre" type="text" id="Nombre" name="nombre" placeholder="Nombre">
+        <input type="text" id="Nombre" name="nombre" placeholder="Nombre" required>
         <br>
         <label for="Apellido">Apellido</label>
-        <input value= "Apellido" type="text" id="Apellido" name="apellido" placeholder="Apellido">
+        <input  type="text" id="Apellido" name="apellido" placeholder="Apellido"  required>
+        <br>
+        <label for="Edad">Edad</label>
+        <input type="date" id="edad" name="edad" placeholder="edad" min="10" max="65" required>
+        <br>
+        <label for="fecha de nacimiento">Fecha de nacimiento</label>
+        <input type="number"     min="1950-01-01" max="2023-05-08"  required>
+        <br>
+        <label for="email">Correo Electrónico</label>
+        <input  type="email" id="email" name="email" required>
         <br>
         <label for="comentario">Comentario</label>
         <br>
         <textarea name="Comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario">Este es un valor por defecto</textarea>
         <br>
+        <label for="contraseña">contraseña</label>
+        <br>
+                <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+        <br>
+        <label for="contraseña">repita contraseña</label>
+        <br>
+        <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g>
+<br>
+        <label for="provincia">provincia</label>
+        <br>
+        <select name="Provincia" id="Provincia">
+        <br>
+        <optgroup>
+            <option value="CABA"></option>
+            <option value="Buenos Aires"></option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="genero">Genero</label>
+    <br>
+    <input type="radio" name="genero" value="femenino"> Femenino
+    <input type="radio" name="genero" value="masculino"> masculino
+    <input type="radio" name="genero" value="otros"> otros
        <!--  <input type="submit"> -->
       <!--  <button type="button">boton</button>
        <button type="reset">reset</button> -->
+       <br>
+    <label for="TyC">Terminos y condiciones</label>
+    <br>
+    <input type="checkbox" name="aceptar" value="acepto">
+    <div>
+        <input type="submit" value="enviar datos">
+    </div>
+
+    <br>
        <button type="submit">Enviar</button>
     </form>
 </body>
