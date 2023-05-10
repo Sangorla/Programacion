@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="../miweb/css/style.css">
 </head>
 <body>
+    <h1>Listado de nombre de la familia</h1>
+    <div>
         <ol type="1">
-        <li>Santiago</li>
-        <li>Yanina</li>
-        <li>Valentina</li>
-        <li>Isabella</li>
+        <li id="padre">Santiago</li>
+        <li id="madre">Yanina</li>
+        <li class="hija">Valentina</li>
+        <li class="hija">Isabella</li>
         <li>IVYS</li>
-    </ol>
+        </ol>
+    </div>
     <ul>
+    <h1>Listado de cosas para hacer</h1>
         <li>comprar los productos ingredientes</li>
         <li>armar la mise en place</li>
     </ul>
@@ -22,6 +27,7 @@
     <br>
     
     <form action="/formulario" method="post">
+        <h1>Formulario de datos personales</h1>
         <label for="Nombre">Nombre</label>
         <input type="text" id="Nombre" name="nombre" placeholder="Nombre" required>
         <br>
@@ -77,6 +83,46 @@
 
     <br>
        <button type="submit">Enviar</button>
+       <br>
+       <input type="reset" value= "borrar formulario">
+       <br>
     </form>
+        <h1>tablas</h1>
+    <table>
+        <caption>Información personal del curso</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santiago</td>
+                <td>Gorla</td>
+                <td>11111111</td>
+                <td>
+                    <img src="https://images.pexels.com/photos/4380127/pexels-photo-4380127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="25%" alt="imagen de santiago">
+                   <!--  <a href="../miweb/Images/pexels-photo-4380127.jpeg"></a> -->
+                </td>
+            </tr>
+            <tr>
+                <td>Berni</td>
+                <td>Pastor</td>
+                <td>123456789</td>
+            </tr>
+        <tfoot>
+                <tr>
+                    <td rowspan="2">Total:</td>
+                    <td colspan="2">50.000</td>
+                </tr>
+                <tr>
+                    <td>otra Información</td>
+                </tr>
+        </tfoot>
+        </tbody>
+    </table>
 </body>
 </html>
