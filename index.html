@@ -17,7 +17,7 @@
         <p>HOLA</p>
     <section>
         <hr>
-        <h3>titulo de la seccion</h3>
+        <h3>Título de la seccion</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in ex, labore illum architecto perferendis hic a quidem quis ea ratione quam quod quo laborum laudantium. Vero tempora error vitae?</p>
         </hr>
     <article>
@@ -27,28 +27,33 @@
             <img src="./miweb/Images/Logo Cofa.png" alt="Logo de la marca">
         <br>
         <hr>
-        <h2>curso de html</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Curso de html</h2>
+        <iframe id="video" width="850" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </article>
     </section>
     </main>
     <hr>
     <h3>Listado de productos y servicios</h3>
-    <ol type="1">
-        <li>Producto</li>
+    <ol class="listadoDeProductos" type="1">
+        <li class="identificador">Producto</li>
             <ol type="a">
                 <li>seguro de hogar</li>
                 <li>seguro de auto</li>
             </ol> 
-        <li>Servicio</li>
+        <li class="identificador">Servicio</li>
             <ol type="a">
                 <li>remolque</li>
             </ol>
-        <li>Precio</li>
+        <li class="identificador">Precio</li>
             <ol type="a">
                 <li>ver listado de precios</li>    
             </ol>
-        <li>cantidad</li>
+        <li class="identificador" id="cantidad"> cantidad</li>
+        <optgroup>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+        </optgroup>
     </ol>
     <hr>
         <dl>
