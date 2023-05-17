@@ -15,27 +15,25 @@
         <h1>Mi primera página web</h1>
         <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim minima, quae harum asperiores sed consequatur odio animi architecto earum dicta! Facilis, corrupti! Soluta sed vitae dolorum velit corporis nihil?</P>
         <p>HOLA</p>
-    <section>
+        <section>
         <hr>
-        <h3>Título de la seccion</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in ex, labore illum architecto perferendis hic a quidem quis ea ratione quam quod quo laborum laudantium. Vero tempora error vitae?</p>
+            <h3>Título de la seccion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in ex, labore illum architecto perferendis hic a quidem quis ea ratione quam quod quo laborum laudantium. Vero tempora error vitae?</p>
         </hr>
-    <article>
-        <h4>
-            <p>Este es el logo de la marca</p>
-        </h4>
-            <img src="./miweb/Images/Logo Cofa.png" alt="Logo de la marca">
+        <article>
+            <h4>
+                <p>Este es el logo de la marca</p>
+            </h4>
+                <img src="./miweb/Images/Logo Cofa.png" alt="Logo de la marca">
         <br>
         <hr>
-        <h2>Curso de html</h2>
-        <iframe id="video" width="850" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </article>
-    </section>
-    </main>
+            <h2>Curso de html</h2>
+                <iframe id="video" width="850" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+        </section>
+        
     <hr>
     <h1>Listado de nombre de la familia</h1>
-    <nav>
-        <div>
             <ol type="1">
             <li id="padre">Santiago</li>
             <li id="madre">Yanina</li>
@@ -43,7 +41,6 @@
             <li class="hija">Isabella</li>
             <li>IVYS</li>
             </ol>
-        </div>
         <ul>
         <h1>Listado de cosas para hacer</h1>
             <li>comprar los productos ingredientes</li>
@@ -81,7 +78,7 @@
                     <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
             <br>
                 <label for="genero">Genero</label>
-        <br>
+            <br>
                     <input type="radio" name="genero" value="femenino"> Femenino
                     <input type="radio" name="genero" value="masculino"> masculino
                     <input type="radio" name="genero" value="otros"> otros
@@ -90,26 +87,23 @@
             <button type="reset">reset</button> -->
             <br>
                 <label for="TyC">Terminos y condiciones</label>
-        <br>
+            <br>
                     <input type="checkbox" name="aceptar" value="acepto">
-        <div>
                     <input type="submit" value="enviar datos">
-        </div>
-        <br>
+            <br>
             <button type="submit">Enviar <i class="bi bi-arrow-bar-up"></i></button>
-            <!--  -->
             <br>
             <input type="reset" value= "borrar formulario">
             <hr>
         </form>
             <h1>Tablas</h1>
         <table>
-            <caption>Información personal del curso</caption>
+            <caption class="identificador">Información personal del curso</caption>
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Apellido</th>
                     <th>DNI</th>
+                    <th>Apellido</th>
                     <th>Imagen</th>
                 </tr>
             </thead>
@@ -140,7 +134,6 @@
             </tfoot>
             </tbody>
         </table>
-    </nav>
     <hr>
         <dl>
             <dt>Argentina</dt>
@@ -149,15 +142,16 @@
             <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam repellendus non laborum totam, vel autem quia temporibus perspiciatis necessitatibus culpa aperiam eum ad, obcaecati tempora! Eos repellat vitae iste.</dd>
         </dl>
     <hr>
+    </main>
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.664246188939!2d-58.39205192336688!3d-34.61265075797159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc7b4f6f15%3A0x1ebf6b574c304c4e!2sCOFA%20Servicios%20Financieros!5e0!3m2!1ses!2sar!4v1683228499256!5m2!1ses!2sar" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p>Moreno 1600 CABA</p>
         <br>
-        <a href="tel:+541143820844">Comunicate con nosotros</a>
+        <a href="tel:+541143820844" class="contacto">Comunicate con nosotros</a>
         <br>
-        <a href="mailto:contacto@cofa.com.ar">correo electrónico</a>
+        <a href="mailto:contacto@cofa.com.ar" class="contacto">correo electrónico</a>
         <br>
-        <a href="#volver arriba">volver arriba</a>
+        <a href="#volver arriba" class="contacto">volver arriba</a>
     </footer>
 </body>
 </html>
