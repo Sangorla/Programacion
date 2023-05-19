@@ -47,38 +47,38 @@
             <li>comprar los productos ingredientes</li>
             <li>armar la mise en place</li>
         </ul>
-            <br>
+        <hr>
+        <br>
+        <div class="FormularioDatos">
         <h2>Formulario de datos personales</h2>
             <form action="/formulario" method="post">
-                <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="nombre" class="DatosPuntuales">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="DatosPuntuales">
             <br>
-                <label for="Apellido">Apellido</label>
-                    <input  type="text" id="apellido" name="apellido" placeholder="apellido"  required>
+                <label for="Apellido"  class="DatosPuntuales">Apellido</label>
+                    <input  type="text" id="apellido" name="apellido" placeholder="apellido"  required class="DatosPuntuales">
             <br>
-                <label for="edad">Edad</label>
-                    <input type="number" id="edad" name="edad" placeholder="edad" min="10" max="65" required>
+                <label for="edad" class="DatosPuntuales">Edad</label>
+                    <input type="number" id="edad" name="edad" placeholder="edad" min="10" max="65" required class="DatosPuntuales">
             <br>
-                <label for="fecha de nacimiento">Fecha de nacimiento</label>
-                    <input type="date"     min="1950-01-01" max="2023-05-08"  required>
+                <label for="fecha de nacimiento"  class="DatosPuntuales">Fecha de nacimiento</label>
+                    <input type="date"     min="1950-01-01" max="2023-05-08"  required class="DatosPuntuales">
             <br>
-                <label for="email">Correo Electrónico</label>
-                    <input  type="email" id="email" name="email" required>
+                <label for="email" class="DatosPuntuales">Correo Electrónico</label>
+                    <input  type="email" id="email" name="email" required class="DatosPuntuales">
             <br>
-                <label for="comentario">Comentario</label>
+                <label for="comentario" class="DatosPuntuales">Comentario</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario" class="DatosPuntuales">Este es un valor por defecto</textarea>
             <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario">Este es un valor por defecto</textarea>
+                <label for="contraseña" class="clave">contraseña</label>
+                        <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" class="clave">
             <br>
-                <label for="contraseña">contraseña</label>
             <br>
-                    <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+                <label for="contraseña" class="clave">repita contraseña</label>
+                        <input  class="clave" type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
             <br>
-                <label for="contraseña">repita contraseña</label>
             <br>
-                    <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
-            <br>
-                <label for="genero">Genero</label>
-            <br>
+                <label class="FormularioDatos" for="genero">Genero</label>
                     <input type="radio" name="genero" value="femenino"> Femenino
                     <input type="radio" name="genero" value="masculino"> masculino
                     <input type="radio" name="genero" value="otros"> otros
@@ -90,15 +90,16 @@
             <br>
             <!-- No va label  <label for="TyC">Terminos y condiciones</label> -->
                 <a href="./miweb/Pages/TyC.txt" target="_blank" class="TyC">Terminos y Condiciones</a>
-                <p>He leído y acepto</p>
-                    <input type="checkbox" name="aceptar" value="acepto">
+                    <p class="TyC">He leído y acepto</p>
+                        <input class="TyC" type="checkbox" name="aceptar" value="acepto">
             <!-- <input type="submit" value="enviar datos"> -->
             <br>
-            <button type="submit">Enviar <!-- <i class="bi bi-arrow-bar-up"></i> --></button>
+            <button type="submit">Enviar <!-- https://icons.getbootstrap.com/ <i class="bi bi-arrow-bar-up"></i> --></button>
             <br>
             <input type="reset" value= "borrar formulario">
             <hr>
         </form>
+    </div>
             <h1>Tablas</h1>
         <table>
             <caption class="identificador">Información personal del curso</caption>

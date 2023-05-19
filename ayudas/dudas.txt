@@ -1,7 +1,0 @@
-1. diferencia entre git push y git push origin master/main
-
-2. git fetch (?)
-
-3. git log: como vuelvo
-
-4. como recuadrar una lista y una tabla.
