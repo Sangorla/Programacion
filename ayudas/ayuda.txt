@@ -1,0 +1,16 @@
+www.w3schools.com
+https://validator.w3.org/#validate_by_uri
+
+<!-- meta description para que figura en el buscador -->
+    <title>"MI PRIMERA WEB"</title>
+
+shotscuts
+alt+z separar los párrafos
+shift+alt+a insertar un comentario
+ctrl+k+u desmarcar un comentario
+
+<!-- target blank para que abra otro vínculo luego de un enlace absoluto -->
+
+Favicon (loguito del title)
+simbolo mayor >alt62
+simbolo menor <alt60

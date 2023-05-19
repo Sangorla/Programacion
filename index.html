@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../miweb/css/style.css">
+<!--     <link rel="shortcur icon" href="favicon.ico" type="./miweb/Images/favicon-16x16.png"> -->
     <title>"MI PRIMERA WEB"</title>
 </head>
 <body>
@@ -12,14 +13,14 @@
         <h1>Soy un header</h1>
     </header>
     <main>
-        <h1>Mi primera página web</h1>
+        <h2>Mi primera página web</h2>
         <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim minima, quae harum asperiores sed consequatur odio animi architecto earum dicta! Facilis, corrupti! Soluta sed vitae dolorum velit corporis nihil?</P>
         <p>HOLA</p>
         <section>
         <hr>
             <h3>Título de la seccion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in ex, labore illum architecto perferendis hic a quidem quis ea ratione quam quod quo laborum laudantium. Vero tempora error vitae?</p>
-        </hr>
+        <hr>
         <article>
             <h4>
                 <p>Este es el logo de la marca</p>
@@ -46,10 +47,9 @@
             <li>comprar los productos ingredientes</li>
             <li>armar la mise en place</li>
         </ul>
-        <br>
-        <br>
-        <form action="/formulario" method="post">
-            <h1>Formulario de datos personales</h1>
+            <br>
+        <h2>Formulario de datos personales</h2>
+            <form action="/formulario" method="post">
                 <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             <br>
@@ -85,13 +85,16 @@
             <!--  <input type="submit"> -->
             <!--  <button type="button">boton</button>
             <button type="reset">reset</button> -->
+            <!-- dentro de un form, poner select de provincia -->
             <br>
-                <label for="TyC">Terminos y condiciones</label>
             <br>
+            <!-- No va label  <label for="TyC">Terminos y condiciones</label> -->
+                <a href="./miweb/Pages/TyC.txt" target="_blank" class="TyC">Terminos y Condiciones</a>
+                <p>He leído y acepto</p>
                     <input type="checkbox" name="aceptar" value="acepto">
-                    <input type="submit" value="enviar datos">
+            <!-- <input type="submit" value="enviar datos"> -->
             <br>
-            <button type="submit">Enviar <i class="bi bi-arrow-bar-up"></i></button>
+            <button type="submit">Enviar <!-- <i class="bi bi-arrow-bar-up"></i> --></button>
             <br>
             <input type="reset" value= "borrar formulario">
             <hr>
@@ -112,11 +115,7 @@
                     <td>Santiago</td>
                     <td>Gorla</td>
                     <td>11111111</td>
-                    <td>
-                        <img src="https://images.pexels.com/photos/4380127/pexels-photo-4380127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="25%" alt="imagen de santiago">
-                        <!--  <a href="../miweb/Images/pexels-photo-4380127.jpeg"></a> -->
-                        <!-- faltaba escribir el contenido!!!!! -->
-                    </td>
+                    <td><img src="https://images.pexels.com/photos/4380127/pexels-photo-4380127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="25%" alt="imagen de santiago"></td>
                 </tr>
                 <tr>
                     <td>Berni</td>
