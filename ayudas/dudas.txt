@@ -1,2 +1,3 @@
 1. cómo abrir html en otro navegador
 2. Favicon
+3. VSC: cómo hacer para que aparezca el valor como emmet
