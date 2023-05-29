@@ -4,155 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../miweb/css/style.css">
-<!--     <link rel="shortcur icon" href="favicon.ico" type="./miweb/Images/favicon-16x16.png"> -->
-    <title>"MI PRIMERA WEB"</title>
+    <link rel="stylesheet" href="./Inmobiliaria/CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Immobiliare</title>
 </head>
 <body>
-    <header  id="volver arriba">
-        <h1>Soy un header</h1>
-    </header>
-    <main>
-        <h2>Mi primera página web</h2>
-        <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim minima, quae harum asperiores sed consequatur odio animi architecto earum dicta! Facilis, corrupti! Soluta sed vitae dolorum velit corporis nihil?</P>
-        <p>HOLA</p>
-        <section>
-        <hr>
-            <h3>Título de la seccion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in ex, labore illum architecto perferendis hic a quidem quis ea ratione quam quod quo laborum laudantium. Vero tempora error vitae?</p>
-        <hr>
-        <article>
-            <h4 class="subsubtitulo">Este es el logo de la marca</h4>
-                <img class="imagen" src="./miweb/Images/Logo Cofa.png" alt="Logo de la marca">
-        <br>
-        <hr>
-            <h2>Curso de html</h2>
-                <iframe class="video" id="video" width="850" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </article>
-        </section>
-        <hr>
-            <ol type="1">
-                <h2>Listado de nombre de la familia</h2>
-                    <li id="padre">Santiago</li>
-                    <li id="madre">Yanina</li>
-                    <li class="hija">Valentina</li>
-                    <li class="hija">Isabella</li>
-                    <li>IVYS</li>
-            </ol>
-            <ul>
-                <h2>Listado de cosas para hacer</h2>
-                    <li>comprar los productos ingredientes</li>
-                    <li>armar la mise en place</li>
-            </ul>
-        <hr>
-        <br>
-        <div class="FormularioDatos">
-        <h2>Formulario de datos personales</h2>
-            <form action="/formulario" method="post">
-                <label for="nombre" class="DatosPuntuales">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="DatosPuntuales">
-            <br>
-                <label for="Apellido"  class="DatosPuntuales">Apellido</label>
-                    <input  type="text" id="Apellido" name="apellido" placeholder="Apellido"  required class="DatosPuntuales">
-            <br>
-                <label for="edad" class="DatosPuntuales">Edad</label>
-                    <input type="number" id="edad" name="edad" placeholder="edad" min="10" max="65" required class="DatosPuntuales">
-            <br>
-                <label for="fecha de nacimiento"  class="DatosPuntuales">Fecha de nacimiento</label>
-                    <input type="date" id="fecha de nacimiento"    min="1950-01-01" max="2023-05-08"  required class="DatosPuntuales">
-            <br>
-                <label for="email" class="DatosPuntuales">Correo Electrónico</label>
-                    <input  type="email" id="email" name="email" required class="DatosPuntuales">
-            <br>
-                <label for="comentario" class="DatosPuntuales">Comentario</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario" class="DatosPuntuales">Este es un valor por defecto</textarea>
-            <br>
-                <label for="contraseña" class="clave">contraseña</label>
-                        <input type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" class="clave">
-            <br>
-            <br>
-                <label for="contraseña" class="clave">repita contraseña</label>
-                        <input  class="clave" type="password" name="contraseña" id="contraseña" required pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
-            <br>
-            <br>
-                <label class="FormularioDatos" for="genero">Genero</label>
-                    <input type="radio" name="genero" value="femenino"> Femenino
-                    <input type="radio" name="genero" value="masculino"> masculino
-                    <input type="radio" name="genero" value="otros"> otros
-            <!--  <input type="submit"> -->
-            <!--  <button type="button">boton</button>
-            <button type="reset">reset</button> -->
-            <!-- dentro de un form, poner select de provincia -->
-            <br>
-            <br>
-            <!-- No va label  <label for="TyC">Terminos y condiciones</label> -->
-                <a href="./miweb/Pages/TyC.txt" target="_blank" class="TyC">Terminos y Condiciones</a>
-                    <p class="TyC">He leído y acepto</p>
-                        <input class="TyC" type="checkbox" name="aceptar" value="acepto">
-            <!-- <input type="submit" value="enviar datos"> -->
-            <br>
-            <button type="submit">Enviar <!-- https://icons.getbootstrap.com/ <i class="bi bi-arrow-bar-up"></i> --></button>
-            <br>
-            <input type="reset" value= "borrar formulario">
-            <hr>
-        </form>
-    </div>
-            <h1>Tablas</h1>
-        <table>
-            <caption class="identificador">Información personal del curso</caption>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>DNI</th>
-                    <th>Apellido</th>
-                    <th>Imagen</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Santiago</td>
-                    <td>Gorla</td>
-                    <td>11111111</td>
-                    <td><img src="https://images.pexels.com/photos/4380127/pexels-photo-4380127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="25%" alt="imagen de santiago"></td>
-                </tr>
-                <tr>
-                    <td>Berni</td>
-                    <td>Pastor</td>
-                    <td>123456789</td>
-                </tr>
-            <tfoot>
-                    <tr>
-                        <td rowspan="2">Total:</td>
-                        <td colspan="2">50.000</td>
-                    </tr>
-                    <tr>
-                        <td>otra Información</td>
-                    </tr>
-            </tfoot>
-            </tbody>
-        </table>
-    <hr>
-        <dl>
-            <dt>Argentina</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis vitae quo aperiam. Repellat labore corporis sunt aliquam maiores consequatur incidunt ea illum? Provident assumenda a distinctio totam voluptate nostrum.</dd>
-            <dt>Brasil</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam repellendus non laborum totam, vel autem quia temporibus perspiciatis necessitatibus culpa aperiam eum ad, obcaecati tempora! Eos repellat vitae iste.</dd>
-        </dl>
-    <hr>
-    </main>
+    <header class="header">
+        <section class="sectionHeader">
+            <div class="container">
 
-    <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.664246188939!2d-58.39205192336688!3d-34.61265075797159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadc7b4f6f15%3A0x1ebf6b574c304c4e!2sCOFA%20Servicios%20Financieros!5e0!3m2!1ses!2sar!4v1683228499256!5m2!1ses!2sar" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Moreno 1600 CABA</p>
-        <br>
-        <a href="tel:+541143820844" class="contacto">Comunicate con nosotros</a>
-        <br>
-        <a href="mailto:contacto@cofa.com.ar" class="contacto">correo electrónico</a>
-        <br>
-        <a href="#volver arriba" class="contacto">volver arriba</a>
-    </footer>
+            </div>
+
+        </section>
+
+
+    </header>
+    
 </body>
 </html>
-
-
-

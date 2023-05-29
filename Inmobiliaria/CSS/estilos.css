@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.sectionHeader{
+    background-color: lightgray
+    ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

@@ -1,9 +1,7 @@
 *{
-    box-sizing: border-box;
-}
-body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 nav{
     display: flex;
@@ -57,8 +55,7 @@ background: lightgreen;
     nav{
         background-color: black;
         flex-direction: row;
-        background: ;
-        }
+    }
     .navEnlace{
         margin: 10px 0;
     }
