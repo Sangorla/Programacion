@@ -1,3 +1,7 @@
-1. cómo abrir html en otro navegador
-2. Favicon
-3. VSC: cómo hacer para que aparezca el valor como emmet
+
+Favicon
+
+Conviene linkear boostrap y luego css?
+
+Si quiero cambiar algo del css de Bootstrap y tengo linkeado el min, debo modificar el min? Porque habló de velocidad de lectura del browser.
+
