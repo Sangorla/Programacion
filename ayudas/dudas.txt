@@ -1,7 +1,0 @@
-
-Favicon
-
-Conviene linkear boostrap y luego css?
-
-Si quiero cambiar algo del css de Bootstrap y tengo linkeado el min, debo modificar el min? Porque habló de velocidad de lectura del browser.
-
