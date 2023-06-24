@@ -8,27 +8,23 @@ nav{
     display: flex;
     background: gray;
     padding: 10px;
-    margin: 10px 100px;
-   /*  align-items: center;
-    justify-content: center; */
-    /* flex-wrap: wrap; */
+    margin: 10px 50px;
     font-family: roboto, sans sans-serif;
     font-size: 1.2rem;
 }
 .navEnlace{
-    display: flex;
     color: white;
     padding: 10px 30px;
-    margin-top: 0px;
+    margin-top: 0.5vh;
     text-decoration: none;
-    align-items: end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 .navEnlace:hover{
     font-weight: bold;
     color: black;
 }
 .logo{
-    width: 70px;
-    align-items: flex-start;
+    width: 80px;
+    justify-content: center;
 }

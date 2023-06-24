@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Immobiliare</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class= "logo" src="./Images/logo.jpg" alt="logo de la empresa">
+            <a href="#Propiedades" class="navEnlace">Propiedades</a>
+            <a href="#Nosotros" class="navEnlace">Nosotros</a>
+            <a href="#Tasaciones" class="navEnlace">Tasaciones</a>
+            <a href="#Contacto" class="navEnlace">Contacto</a>
+        </nav>
+    </header>
+        <section id="Propiedades">
+            <h2 class="propiedades">Propiedades destacadas</h2>
+            <img class= imagenProp src="./Images/Foto 1.jpg" alt="Av. del Libertador 5100">
+            <img class= imagenProp src="./Images/Foto 2.jpg" alt="Soldado de la Independencia al 500">
+            <img class= imagenProp src="./Images/Foto 3.jpg" alt="Echeverria al 1800">
+            <img class=imagenProp  src="./Images/Foto 4.jpg" alt="Soldado de la Independencia al 500"
+            ><img class= imagenProp src="./Images/Foto 5.jpg" alt="Segui al 3500">
+            <img class= imagenProp src="./Images/Foto 6.jpg" alt="Basavilbaso al 1200">
+        </section>
+        <section id="Nosotros">
+            <h2 class="nosotros">NOSOTROS</h2>
+        <p>Somos un equipo de profesionales expertos y apasionados que brinda atención personalizada del mas alto nivel en la búsqueda de tu hogar. Nuestra experiencia permitirá que tu compra o venta sea un éxito. </p>
+        </section>
+        <section>
+            <div class="contenido pb-5 d-none d-lg-block">
+                <div class="form d-flex flex-column">
+                    <div class="graubg">
+                        <h2 class="text-white fw-700 fz-40 pb-3">Buscador de propiedades</h2>
+                        <div class="d-flex justify-content-center">
+        
+                            <form id="FormBuscar" name="formBuscar" method="get" action="propiedades.php">
+        
+                                <select name="idt" id="idt" class="select">
+        
+                                    <option value='0' selected>Tipo de Propiedad</option>
+        
+                                    <option value='0'>Todas</option>
+        
+                                    <option value='6'>Amarra</option><option value='16'>Baulera</option><option value='17'>Bodega</option><option value='20'>Cama náutica</option><option value='9'>Campo</option><option value='3'>Casa</option><option value='19'>Chacra</option><option value='10'>Cochera</option><option value='2'>Departamento</option><option value='14'>Depósito</option><option value='8'>Edificio Comercial</option><option value='18'>Finca</option><option value='15'>Fondo de Comercio</option><option value='24'>Galpón</option><option value='11'>Hotel</option><option value='21'>Isla</option><option value='7'>Local</option><option value='12'>Nave Industrial</option><option value='5'>Oficina</option><option value='13'>PH</option><option value='4'>Quinta</option><option value='23'>Terraza</option><option value='1'>Terreno</option>
+                                </select>
+        
+                                <select name="ido" id="ido" class="select">
+        
+                                    <option value='0' selected>Operación</option>
+        
+                                    <option value='0'>Todas</option>
+        
+                                    <option value='2'>Alquiler</option><option value='1'>Venta</option><option value='3'>Emprendimientos</option>
+                                </select>
+        
+                                <!-- <select name="idp" id="idp" class="select" onchange="getSubCategoria(this.value)">
+        
+        
+        
+                                    <option value='0' selected>Provincia</option>
+        
+                                    <option value='0'>Todas</option>
+        
+        
+        
+                                    
+                                </select> -->
+        
+                                <select name="idb" id="idb" class="select">
+        
+        
+        
+                                    <option value='0' selected>Barrio o Localidad</option>
+        
+        
+                                    <option value='24671'>Abasto</option><option value='24672'>Agronomia</option><option value='24673'>Almagro</option><option value='24676'>Balvanera</option><option value='24677'>Barracas</option><option value='24678'>Barrio Norte</option><option value='24682'>Belgrano</option><option value='24688'>Boca</option><option value='24689'>Boedo</option><option value='24690'>Caballito</option><option value='24697'>Centro</option><option value='24705'>Chacarita</option><option value='24706'>Coghlan</option><option value='24707'>Colegiales</option><option value='24708'>Congreso</option><option value='24709'>Constitucion</option><option value='24710'>Flores</option><option value='24713'>Floresta</option><option value='24687'>Las Cañitas</option><option value='24718'>Liniers</option><option value='24720'>Mataderos</option><option value='24721'>Nuñez</option><option value='24724'>Once</option><option value='24728'>Palermo</option><option value='24725'>Parque Centenario</option><option value='24726'>Parque Chacabuco</option><option value='24727'>Parque Patricios</option><option value='24735'>Paternal</option><option value='24736'>Pompeya</option><option value='24701'>Puerto Madero</option><option value='24681'>Recoleta</option><option value='24702'>Retiro</option><option value='24739'>Saavedra</option><option value='24737'>San Cristobal</option><option value='24738'>San Telmo</option><option value='24757'>Velez Sarsfield</option><option value='24758'>Versalles</option><option value='24740'>Villa Crespo</option><option value='24747'>Villa del Parque</option><option value='24741'>Villa Devoto</option><option value='24743'>Villa General Mitre</option><option value='24744'>Villa Lugano</option><option value='24745'>Villa Luro</option><option value='24746'>Villa Ortuzar</option><option value='24749'>Villa Pueyrredon</option><option value='24750'>Villa Real</option><option value='24751'>Villa Riachuelo</option><option value='24752'>Villa Soldati</option><option value='24753'>Villa Urquiza</option>
+        
+        
+        
+                                </select>
+                                <input type="hidden" name="idp" value="146">
+        
+                                <!-- <input type="submit" name="submit" id="submit" value="BUSCAR PROPIEDADES" class="buscar" style='cursor:pointer'> -->
+                                <button type="submit" name="submit" id="submit" value="Buscar propiedades" class="btn-buscar" style="cursor:pointer">Buscar propiedades <img src="images/icons/lupa.png" alt="logo lupa" width="20px"></button>
+        
+        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <section id="Tasaciones">
+            <h2 class="tasaciones">Tasaciones</h2>
+        </section>
+        <section id="Contacto">
+            <h2 class="Contacto">Contacto</h2>
+            <p class="text-center text-gray pt-5" style="display: none;" id="gracias-contact-form">Gracias por contactarnos, Nos comunicaremos a la brevedad</p>
+            <form id="contact-form" method="POST">
+                <div class="container">
+    
+                    <div class="row justify-content-center">
+    
+                        <div class="col-12 col-lg-4">
+    
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Nombre y Apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="tel" name="telefono" placeholder="Teléfono" required>
+                            </div>
+    
+                            <div class="mb-3">
+    
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <textarea class="form-control" id="" rows="6" name="consulta" placeholder="Consulta"></textarea>
+                        </div>
+    
+    
+                    </div>
+                    <div class="col-12 col-lg-10 d-flex justify-content-end mt-3">
+                        <div class="g-recaptcha" data-sitekey="6LcTF6EjAAAAAKp_m9OX8CbjygF39SLYLoduxhEO"></div>
+                    </div>
+                    <div class="col-12 col-lg-10 d-flex justify-content-end mt-3">
+                        <div class="spinner-border text-info" id="spinner" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary px-4" id="btn-contacto-enviar">Enviar</button>
+                    </div>
+                </div>
+    
+            </form>
+        </section>
+
+    
+    
+</body>
+    <div class="sticky">
+        <a href="https://wa.me/+5491155555555">
+            <img src="images/icons/whatsapp.png" alt="">
+        </a>
+    </div>
+<footer class="bg-more-light-gray">
+<div class="container">
+    <div class="row py-5">
+        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+            <div class="mb-3">
+                <h3 class="direccion">Avenida Rivadavia 1000</h3>
+                <h4 class="piso">Oficina 305 | Centro - CABA</h4>
+            </div>
+            <div class="mb-3">
+                <h3 class=" fw-700 fz-16 text-dark-gray">Teléfono</h3>
+                <a href="tel:+1166869650" class="text-dark-gray fz-14">+5491155555555</a>
+            </div>
+            <div class="mb-3">
+                <h3 class=" fw-700 fz-16 text-dark-gray">Whatsapp (de 9 a 21 hs.)</h3>
+                <a href="https://wa.me/+5491166869650" class="text-dark-gray fz-14">+5491155555555</a> 
+            </div>
+            
+            
+            <div class="mb-3">
+                <h3 class=" fw-700 fz-14 text-dark-gray">Email</h3>
+                <a href="mailto:hola@martinpinus.net" class="text-dark-gray fz-14">contacto@immobiliare.com.ar</a>
+            </div>
+            <div class="mb-3">
+                <h3 class=" fw-700 fz-14 text-dark-gray">Corredor responsable</h3>
+                <p class="text-dark-gray fz-14">Pepe Sanchez, Matrícula CUCICBA Nº5555555</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 pb-3">
+            <h3 class="text-uppercase fw-700 fz-21 text-dark-gray pb-3">Suscríbase para recibir novedades</h3>
+            <div class="mb-3">
+                <p class="text-center text-gray" style="display: none;" id="gracias-newsletter">Muchas gracias por suscribirte.</p>
+
+                <form id="newsletter" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+                    </div>
+                    <div class="col-12 col-lg-10 d-flex justify-content-end mt-3 mb-2">
+                        <div class="g-recaptcha" data-sitekey="6LcTF6EjAAAAAKp_m9OX8CbjygF39SLYLoduxhEO"></div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="spinner-border text-info" id="spinner-newsletter" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary px-4" id="btn-newsletter">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h4 class="fw-700 fz-20 text-dark-gray pb-2">Síganos en las redes</h4>
+                <div class="d-flex gap-3">
+                    
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./Images/instagram.svg" alt="instagram" width="31px"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./Images/youtube.svg" alt="youtube" width="30px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.820119621668!2d-58.38310912341112!3d-34.60870985776329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad04a0b51c1%3A0xe7258a1f1340cbbd!2sAv.%20Rivadavia%201000%2C%20C1002AAU%20CABA!5e0!3m2!1ses!2sar!4v1687639060742!5m2!1ses!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</div>
+</footer>
+</html>
